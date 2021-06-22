@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name ant-916-chp-t)(type KiCad)(uri ${KIPRJMOD}/ANT-916-CHP-T/ant-916-chp-t.pretty)(options "")(descr ""))
+  (lib (name AZ1117CR-3.3)(type KiCad)(uri "${KIPRJMOD}/IC_Diodes Inc._AZ1117CR-3.3TRG1/eec.pretty")(options "")(descr ""))
+)

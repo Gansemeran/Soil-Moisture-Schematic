@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AZ1117CR-3.3TRG1
+D AZ1117CR-3.3TRG1
+F https://www.diodes.com/assets/Datasheets/AZ1117C.pdf
+$ENDCMP
+# end doc library

@@ -1,0 +1,20 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# FC-28
+#
+DEF FC-28 FC 0 40 Y Y 1 F N
+F0 "FC" 0 0 50 H V C CNN
+F1 "FC-28" 0 0 50 H V C CNN
+F2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -350 -150 350 -650 0 1 0 f
+X VCC 0 -450 -400 100 R 50 50 1 1 I
+X GND 1 450 -400 100 L 50 50 1 1 O
+X A0 2 -150 -750 100 U 50 50 1 1 O
+X D0 3 150 -750 100 U 50 50 1 1 O
+ENDDRAW
+ENDDEF
+#
+#End Library
