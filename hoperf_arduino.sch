@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 12
+Sheet 1 8
 Title ""
 Date ""
 Rev ""
@@ -69,14 +69,6 @@ Wire Wire Line
 	900  5450 600  5450
 Wire Wire Line
 	900  5650 600  5650
-Wire Wire Line
-	1900 5350 2150 5350
-Wire Wire Line
-	1900 5450 2150 5450
-Wire Wire Line
-	1900 5550 2150 5550
-Wire Wire Line
-	1900 5650 2150 5650
 Wire Wire Line
 	1900 5750 2150 5750
 Wire Wire Line
@@ -281,14 +273,6 @@ Wire Notes Line
 	500  500  500  2100
 Wire Notes Line
 	500  500  2400 500 
-Text Label 2150 5650 2    50   ~ 0
-L_DIO2
-Text Label 2150 5550 2    50   ~ 0
-L_DIO3
-Text Label 2150 5450 2    50   ~ 0
-L_DIO4
-Text Label 2150 5350 2    50   ~ 0
-L_DIO5
 Text Label 2150 5750 2    50   ~ 0
 L_DIO1
 Text Label 2150 5850 2    50   ~ 0
@@ -592,72 +576,8 @@ Wire Wire Line
 	5600 1500 6000 1500
 Wire Wire Line
 	4950 1500 4550 1500
-$Sheet
-S 4950 1800 650  200 
-U 6144AFFF
-F0 "sheet6144AFFB" 50
-F1 "voltage_level_translator.sch" 50
-F2 "L_SIG" I R 5600 1900 50 
-F3 "H_SIG" I L 4950 1900 50 
-$EndSheet
-Wire Wire Line
-	5600 1900 6000 1900
-Wire Wire Line
-	4950 1900 4550 1900
-$Sheet
-S 4950 2200 650  200 
-U 6145422E
-F0 "sheet6145422A" 50
-F1 "voltage_level_translator.sch" 50
-F2 "L_SIG" I R 5600 2300 50 
-F3 "H_SIG" I L 4950 2300 50 
-$EndSheet
-Wire Wire Line
-	5600 2300 6000 2300
-Wire Wire Line
-	4950 2300 4550 2300
-$Sheet
-S 4950 2600 650  200 
-U 6145D84A
-F0 "sheet6145D846" 50
-F1 "voltage_level_translator.sch" 50
-F2 "L_SIG" I R 5600 2700 50 
-F3 "H_SIG" I L 4950 2700 50 
-$EndSheet
-Wire Wire Line
-	5600 2700 6000 2700
-Wire Wire Line
-	4950 2700 4550 2700
-$Sheet
-S 4950 3000 650  200 
-U 614672C1
-F0 "sheet614672BD" 50
-F1 "voltage_level_translator.sch" 50
-F2 "L_SIG" I R 5600 3100 50 
-F3 "H_SIG" I L 4950 3100 50 
-$EndSheet
-Wire Wire Line
-	5600 3100 6000 3100
-Wire Wire Line
-	4950 3100 4550 3100
 Text Label 4550 1500 0    50   ~ 0
 H_DIO1
-Text Label 4550 1900 0    50   ~ 0
-H_DIO2
-Text Label 4550 2300 0    50   ~ 0
-H_DIO3
-Text Label 4550 2700 0    50   ~ 0
-H_DIO4
-Text Label 4550 3100 0    50   ~ 0
-H_DIO5
-Text Label 6000 3100 2    50   ~ 0
-L_DIO5
-Text Label 6000 2700 2    50   ~ 0
-L_DIO4
-Text Label 6000 2300 2    50   ~ 0
-L_DIO3
-Text Label 6000 1900 2    50   ~ 0
-L_DIO2
 Text Label 6000 1500 2    50   ~ 0
 L_DIO1
 Text Label 9250 4400 0    50   ~ 0
@@ -668,14 +588,14 @@ Text Label 9250 4500 0    50   ~ 0
 H_MISO
 Text Label 9250 4600 0    50   ~ 0
 H_SCK
-Text Label 9250 4200 0    50   ~ 0
+Text Label 9250 3800 0    50   ~ 0
 H_RESET
 Wire Wire Line
 	9250 3500 9650 3500
 Wire Wire Line
 	9250 3600 9650 3600
 Wire Wire Line
-	9250 4200 9650 4200
+	9250 3800 9650 3800
 Wire Wire Line
 	9250 4300 9650 4300
 Wire Wire Line
@@ -809,18 +729,8 @@ F 3 "" H 8300 2850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8300 2850 8300 2750
-NoConn ~ 9650 3400
-NoConn ~ 9650 3300
 NoConn ~ 10250 2900
 NoConn ~ 10350 2900
-NoConn ~ 10650 3400
-NoConn ~ 10650 3700
-NoConn ~ 10650 4000
-NoConn ~ 10650 4100
-NoConn ~ 10650 4200
-NoConn ~ 10650 4300
-NoConn ~ 10650 4400
-NoConn ~ 10650 4500
 $Comp
 L MCU_Module:Arduino_Nano_v3.x A1
 U 1 1 60C9E5C4
@@ -832,24 +742,6 @@ F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 10150 3900 5
 	1    10150 3900
 	1    0    0    -1  
 $EndComp
-Text Label 9250 3700 0    50   ~ 0
-H_DIO2
-Text Label 9250 3800 0    50   ~ 0
-H_DIO3
-Text Label 9250 3900 0    50   ~ 0
-H_DIO4
-Text Label 9250 4000 0    50   ~ 0
-H_DIO5
-Wire Wire Line
-	9650 3700 9250 3700
-Wire Wire Line
-	9250 3800 9650 3800
-Wire Wire Line
-	9650 3900 9250 3900
-Wire Wire Line
-	9650 4000 9250 4000
-NoConn ~ 9650 4100
-NoConn ~ 10650 4600
 $Comp
 L Device:Battery_Cell BT1
 U 1 1 60DF8C4E
@@ -887,4 +779,110 @@ Wire Wire Line
 	8200 4250 8050 4250
 Wire Wire Line
 	7750 4250 7600 4250
+Text Label 11000 3400 2    50   ~ 0
+H_RESET
+Wire Wire Line
+	11000 3400 10650 3400
+$Comp
+L power:GND #PWR?
+U 1 1 60E78F09
+P 9450 4000
+F 0 "#PWR?" H 9450 3750 50  0001 C CNN
+F 1 "GND" V 9455 3872 50  0000 R CNN
+F 2 "" H 9450 4000 50  0001 C CNN
+F 3 "" H 9450 4000 50  0001 C CNN
+	1    9450 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9650 3900 9650 4000
+Connection ~ 9650 4000
+Wire Wire Line
+	9650 4000 9650 4100
+Connection ~ 9650 4100
+Wire Wire Line
+	9650 4100 9650 4200
+Wire Wire Line
+	9650 4000 9450 4000
+$Comp
+L power:GND #PWR?
+U 1 1 60E80D17
+P 9400 3300
+F 0 "#PWR?" H 9400 3050 50  0001 C CNN
+F 1 "GND" V 9405 3172 50  0000 R CNN
+F 2 "" H 9400 3300 50  0001 C CNN
+F 3 "" H 9400 3300 50  0001 C CNN
+	1    9400 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9650 3300 9650 3400
+Wire Wire Line
+	9650 3300 9400 3300
+Connection ~ 9650 3300
+$Comp
+L power:GND #PWR?
+U 1 1 60E89E88
+P 2150 5450
+F 0 "#PWR?" H 2150 5200 50  0001 C CNN
+F 1 "GND" V 2155 5322 50  0000 R CNN
+F 2 "" H 2150 5450 50  0001 C CNN
+F 3 "" H 2150 5450 50  0001 C CNN
+	1    2150 5450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1900 5350 1900 5450
+Connection ~ 1900 5450
+Wire Wire Line
+	1900 5450 1900 5550
+Connection ~ 1900 5550
+Wire Wire Line
+	1900 5550 1900 5650
+Wire Wire Line
+	1900 5450 2150 5450
+$Comp
+L power:GND #PWR?
+U 1 1 60E8EC5C
+P 10850 3700
+F 0 "#PWR?" H 10850 3450 50  0001 C CNN
+F 1 "GND" V 10855 3572 50  0000 R CNN
+F 2 "" H 10850 3700 50  0001 C CNN
+F 3 "" H 10850 3700 50  0001 C CNN
+	1    10850 3700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10650 3700 10850 3700
+$Comp
+L power:GND #PWR?
+U 1 1 60E917A2
+P 10850 4600
+F 0 "#PWR?" H 10850 4350 50  0001 C CNN
+F 1 "GND" V 10855 4472 50  0000 R CNN
+F 2 "" H 10850 4600 50  0001 C CNN
+F 3 "" H 10850 4600 50  0001 C CNN
+	1    10850 4600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10650 4600 10650 4500
+Connection ~ 10650 4100
+Wire Wire Line
+	10650 4100 10650 4000
+Connection ~ 10650 4200
+Wire Wire Line
+	10650 4200 10650 4100
+Connection ~ 10650 4300
+Wire Wire Line
+	10650 4300 10650 4200
+Connection ~ 10650 4400
+Wire Wire Line
+	10650 4400 10650 4300
+Connection ~ 10650 4500
+Wire Wire Line
+	10650 4500 10650 4400
+Wire Wire Line
+	10650 4600 10850 4600
+Connection ~ 10650 4600
 $EndSCHEMATC
