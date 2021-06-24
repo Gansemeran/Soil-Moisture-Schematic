@@ -19,7 +19,7 @@ U 1 1 608EC83D
 P 1400 5450
 F 0 "U2" H 1400 6131 50  0000 C CNN
 F 1 "RFM95W-915S2" H 1400 6040 50  0000 C CNN
-F 2 "RF_Module:HOPERF_RFM9XW_SMD" H -1900 7100 50  0001 C CNN
+F 2 "RF_Module:HOPERF_RFM9XW_THT" H -1900 7100 50  0001 C CNN
 F 3 "https://www.hoperf.com/data/upload/portal/20181127/5bfcbea20e9ef.pdf" H -1900 7100 50  0001 C CNN
 	1    1400 5450
 	1    0    0    -1  
@@ -253,71 +253,10 @@ Wire Notes Line
 	9350 700  11150 700 
 Wire Wire Line
 	900  5150 600  5150
-$Comp
-L Connector:Conn_01x08_Male J1
-U 1 1 60974A0D
-P 800 1350
-F 0 "J1" H 850 1800 50  0000 C CNN
-F 1 "Conn_01x08_Male" V 700 1300 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 800 1350 50  0001 C CNN
-F 3 "~" H 800 1350 50  0001 C CNN
-	1    800  1350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1000 1250 1300 1250
 Text Label 2700 1100 0    50   ~ 0
 H_MOSI
 Text Label 4150 1100 2    50   ~ 0
 L_MOSI
-Wire Wire Line
-	1000 1350 1300 1350
-Wire Wire Line
-	1000 1450 1300 1450
-Wire Wire Line
-	1000 1550 1300 1550
-Wire Wire Line
-	1000 1650 1300 1650
-Text Label 1300 1250 2    50   ~ 0
-H_MOSI
-Text Label 1300 1350 2    50   ~ 0
-H_MISO
-Text Label 1300 1450 2    50   ~ 0
-H_SCK
-Text Label 1300 1550 2    50   ~ 0
-H_CS
-Text Label 1300 1650 2    50   ~ 0
-H_RESET
-Wire Wire Line
-	1000 1750 1300 1750
-$Comp
-L power:GND #PWR04
-U 1 1 60BAF865
-P 1300 1850
-F 0 "#PWR04" H 1300 1600 50  0001 C CNN
-F 1 "GND" H 1305 1677 50  0000 C CNN
-F 2 "" H 1300 1850 50  0001 C CNN
-F 3 "" H 1300 1850 50  0001 C CNN
-	1    1300 1850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1300 1850 1300 1750
-Wire Wire Line
-	1000 1150 1300 1150
-$Comp
-L power:+5V #PWR03
-U 1 1 60BD2F48
-P 1300 1000
-F 0 "#PWR03" H 1300 850 50  0001 C CNN
-F 1 "+5V" H 1315 1173 50  0000 C CNN
-F 2 "" H 1300 1000 50  0001 C CNN
-F 3 "" H 1300 1000 50  0001 C CNN
-	1    1300 1000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1300 1000 1300 1150
 Wire Notes Line
 	6500 500  6500 3500
 Wire Notes Line
@@ -330,86 +269,6 @@ Wire Notes Line
 	6500 700  2450 700 
 Text Notes 2500 650  0    50   ~ 10
 Bidirectional Level Translator (5V <-> 3V3)
-$Comp
-L Connector:Conn_01x08_Male J2
-U 1 1 60CD0A4F
-P 2150 1350
-F 0 "J2" H 2200 1800 50  0000 C CNN
-F 1 "Conn_01x08_Male" V 2050 1300 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 2150 1350 50  0001 C CNN
-F 3 "~" H 2150 1350 50  0001 C CNN
-	1    2150 1350
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	1950 1750 1600 1750
-Wire Wire Line
-	1600 1750 1600 1850
-$Comp
-L power:GND #PWR07
-U 1 1 60CEB7E3
-P 1600 1850
-F 0 "#PWR07" H 1600 1600 50  0001 C CNN
-F 1 "GND" H 1605 1677 50  0000 C CNN
-F 2 "" H 1600 1850 50  0001 C CNN
-F 3 "" H 1600 1850 50  0001 C CNN
-	1    1600 1850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1950 1650 1600 1650
-Wire Wire Line
-	1600 1550 1950 1550
-Wire Wire Line
-	1950 1450 1600 1450
-Wire Wire Line
-	1600 1350 1950 1350
-Wire Wire Line
-	1950 1250 1600 1250
-Wire Wire Line
-	1600 1150 1950 1150
-Wire Wire Line
-	1950 1050 1600 1050
-Wire Wire Line
-	1600 1050 1600 1000
-$Comp
-L power:+3V3 #PWR06
-U 1 1 60D41F77
-P 1600 1000
-F 0 "#PWR06" H 1600 850 50  0001 C CNN
-F 1 "+3V3" H 1615 1173 50  0000 C CNN
-F 2 "" H 1600 1000 50  0001 C CNN
-F 3 "" H 1600 1000 50  0001 C CNN
-	1    1600 1000
-	1    0    0    -1  
-$EndComp
-Text Label 1600 1150 0    50   ~ 0
-L_DIO0
-Text Label 1600 1250 0    50   ~ 0
-L_DIO1
-Text Label 1600 1350 0    50   ~ 0
-L_DIO2
-Text Label 1600 1450 0    50   ~ 0
-L_DIO3
-Text Label 1600 1550 0    50   ~ 0
-L_DIO4
-Text Label 1600 1650 0    50   ~ 0
-L_DIO5
-$Comp
-L power:+3V3 #PWR02
-U 1 1 60BD22A2
-P 1050 1000
-F 0 "#PWR02" H 1050 850 50  0001 C CNN
-F 1 "+3V3" H 1065 1173 50  0000 C CNN
-F 2 "" H 1050 1000 50  0001 C CNN
-F 3 "" H 1050 1000 50  0001 C CNN
-	1    1050 1000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1050 1050 1050 1000
-Wire Wire Line
-	1000 1050 1050 1050
 Wire Notes Line
 	2400 2100 500  2100
 Wire Notes Line
@@ -801,17 +660,6 @@ Text Label 6000 1900 2    50   ~ 0
 L_DIO2
 Text Label 6000 1500 2    50   ~ 0
 L_DIO1
-$Comp
-L MCU_Module:Arduino_Nano_v3.x A1
-U 1 1 60C9E5C4
-P 10150 3900
-F 0 "A1" H 10150 2811 50  0000 C CNN
-F 1 "Arduino_Nano_v3.x" H 10150 2720 50  0000 C CNN
-F 2 "Module:Arduino_Nano" H 10150 3900 50  0001 C CIN
-F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 10150 3900 50  0001 C CNN
-	1    10150 3900
-	1    0    0    -1  
-$EndComp
 Text Label 9250 4400 0    50   ~ 0
 H_MOSI
 Text Label 9250 4300 0    50   ~ 0
@@ -820,14 +668,14 @@ Text Label 9250 4500 0    50   ~ 0
 H_MISO
 Text Label 9250 4600 0    50   ~ 0
 H_SCK
-Text Label 9250 3800 0    50   ~ 0
+Text Label 9250 4200 0    50   ~ 0
 H_RESET
 Wire Wire Line
 	9250 3500 9650 3500
 Wire Wire Line
 	9250 3600 9650 3600
 Wire Wire Line
-	9250 3800 9650 3800
+	9250 4200 9650 4200
 Wire Wire Line
 	9250 4300 9650 4300
 Wire Wire Line
@@ -961,4 +809,82 @@ F 3 "" H 8300 2850 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8300 2850 8300 2750
+NoConn ~ 9650 3400
+NoConn ~ 9650 3300
+NoConn ~ 10250 2900
+NoConn ~ 10350 2900
+NoConn ~ 10650 3400
+NoConn ~ 10650 3700
+NoConn ~ 10650 4000
+NoConn ~ 10650 4100
+NoConn ~ 10650 4200
+NoConn ~ 10650 4300
+NoConn ~ 10650 4400
+NoConn ~ 10650 4500
+$Comp
+L MCU_Module:Arduino_Nano_v3.x A1
+U 1 1 60C9E5C4
+P 10150 3900
+F 0 "A1" H 10150 2811 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" H 10150 2720 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 10150 3900 50  0001 C CIN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 10150 3900 50  0001 C CNN
+	1    10150 3900
+	1    0    0    -1  
+$EndComp
+Text Label 9250 3700 0    50   ~ 0
+H_DIO2
+Text Label 9250 3800 0    50   ~ 0
+H_DIO3
+Text Label 9250 3900 0    50   ~ 0
+H_DIO4
+Text Label 9250 4000 0    50   ~ 0
+H_DIO5
+Wire Wire Line
+	9650 3700 9250 3700
+Wire Wire Line
+	9250 3800 9650 3800
+Wire Wire Line
+	9650 3900 9250 3900
+Wire Wire Line
+	9650 4000 9250 4000
+NoConn ~ 9650 4100
+NoConn ~ 10650 4600
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 60DF8C4E
+P 7950 4250
+F 0 "BT1" V 8205 4300 50  0000 C CNN
+F 1 "Battery_Cell" V 8114 4300 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x02_P2.54mm_Vertical" V 7950 4310 50  0001 C CNN
+F 3 "~" V 7950 4310 50  0001 C CNN
+	1    7950 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR0129
+U 1 1 60DF950D
+P 7600 4250
+F 0 "#PWR0129" H 7600 4100 50  0001 C CNN
+F 1 "+5V" V 7615 4378 50  0000 L CNN
+F 2 "" H 7600 4250 50  0001 C CNN
+F 3 "" H 7600 4250 50  0001 C CNN
+	1    7600 4250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0130
+U 1 1 60DF9FE7
+P 8200 4250
+F 0 "#PWR0130" H 8200 4000 50  0001 C CNN
+F 1 "GND" V 8205 4122 50  0000 R CNN
+F 2 "" H 8200 4250 50  0001 C CNN
+F 3 "" H 8200 4250 50  0001 C CNN
+	1    8200 4250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8200 4250 8050 4250
+Wire Wire Line
+	7750 4250 7600 4250
 $EndSCHEMATC
